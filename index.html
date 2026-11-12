@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBMS MCQ Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">DB</div>
+      <div>
+        <h1>DBMS MCQ Master</h1>
+        <p>Learn • Practice • Understand</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="themeBtn" class="icon-btn" title="Toggle theme">🌙</button>
+      <button id="resetBtn" class="outline-btn">Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="pill">📚 Exam Preparation</span>
+        <h2>Master DBMS MCQs<br><span>the easy way.</span></h2>
+        <p>Practice the complete question bank with instant answers, explanations, topic filters and exam marks.</p>
+      </div>
+      <div class="stats-card">
+        <div><strong id="totalStat">119</strong><small>Questions</small></div>
+        <div><strong>1 & 2</strong><small>Marks</small></div>
+        <div><strong id="topicStat">20+</strong><small>Topics</small></div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="🔎 Search a question or topic...">
+      <select id="markFilter">
+        <option value="all">All Marks</option>
+        <option value="1">1 Mark</option>
+        <option value="2">2 Marks</option>
+      </select>
+      <select id="topicFilter">
+        <option value="all">All Topics</option>
+      </select>
+      <button id="shuffleBtn" class="primary-btn">🔀 Shuffle</button>
+    </section>
+
+    <section class="progress-wrap">
+      <div class="progress-top">
+        <span>Practice Progress</span>
+        <strong><span id="answered">0</span> / <span id="visibleCount">119</span></strong>
+      </div>
+      <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <div id="questionList"></div>
+    <div id="empty" class="empty hidden">No questions found. Try another search or filter.</div>
+  </main>
+
+  <footer>
+    <p>DBMS MCQ Master • Built with HTML, CSS & JavaScript</p>
+    <p>Use the explanations after answering to strengthen understanding.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
